@@ -30,7 +30,7 @@ class _HomeState extends State<Home> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image.asset('image/Arfix_Full.jpeg'),
+            Image.asset('image/homePage.jpg'),
             SizedBox(height: 19 * a),
             Padding(
               padding: EdgeInsets.only(left: 17),
@@ -68,8 +68,8 @@ class _HomeState extends State<Home> {
                         height: 76,
                         width: 307,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: Color.fromARGB(255, 240, 236, 236),
+                          borderRadius: BorderRadius.circular(5),
+                          color: Colors.white,
                         ),
                         child: Padding(
                           padding:
@@ -79,7 +79,7 @@ class _HomeState extends State<Home> {
                             child: Material(
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(6)),
-                              color: bdark,
+                              color: Color(0xFFE74C1C),
                               child: InkWell(
                                 splashColor: bTerang2,
                                 onTap: () => Navigator.of(context)
@@ -92,11 +92,10 @@ class _HomeState extends State<Home> {
                                     Padding(
                                       padding: EdgeInsets.only(left: 28 * a),
                                       child: SizedBox(
-                                        width: 31 * a,
-                                        height: 31 * a,
-                                        child: SvgPicture.asset(
-                                          'assets/obeng.svg',
-                                        ),
+                                        width: 28,
+                                        height: 28,
+                                        child:
+                                            Image.asset('image/newScrew.jpeg'),
                                       ),
                                     ),
                                     SizedBox(width: 47 * a),
@@ -132,142 +131,110 @@ class _HomeState extends State<Home> {
               ),
             ),
             SizedBox(height: 19 * a),
-            CarouselSlider(
-              items: [
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Colors.transparent,
-                  ),
-                  child: Row(
-                    children: [
-                      Container(
-                          width: 60,
-                          height: 60,
-                          child: Image.asset("image/testi.jpeg")),
-                      SizedBox(width: 16),
-                      Container(
-                        height: 60,
-                        width: 143,
-                        child: SingleChildScrollView(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text('Mariana2',
-                                  style: GoogleFonts.workSans(
+            Container(
+              height: 155,
+              decoration: BoxDecoration(
+                  image:
+                      DecorationImage(image: AssetImage('image/bgTesti.jpeg'))),
+              child: CarouselSlider(
+                items: [
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 17, horizontal: 12),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(5),
+                      color: Colors.white,
+                    ),
+                    child: Row(
+                      children: [
+                        Image.asset("image/mariana2.jpeg"),
+                        SizedBox(width: 16),
+                        Container(
+                          color: Colors.transparent,
+                          height: 100,
+                          width: 200,
+                          child: SingleChildScrollView(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Image.asset('image/quote.jpg'),
+                                SizedBox(height: 5),
+                                Text(
+                                  'Pengerjaan di Arfix sangat bagus dan memperhatikan detail sehingga ga perlu worry lagi barang akan rusak',
+                                  maxLines: 4,
+                                  style: GoogleFonts.inter(
                                       fontSize: 10,
-                                      fontWeight: FontWeight.w500,
-                                      color: bdark)),
-                              SizedBox(height: 5),
-                              Text(
-                                'Aplikasinya Bagus banget, membantu banget, dan reparatornya ramah-ramah, semoga semakin bagus aplikasinya',
-                                maxLines: 4,
-                                style: GoogleFonts.workSans(
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.w500,
-                                    color: gMuda),
-                              ),
-                            ],
+                                      fontWeight: FontWeight.w400,
+                                      color: gMuda),
+                                ),
+                                SizedBox(height: 5),
+                                Text('Mariana',
+                                    style: GoogleFonts.inter(
+                                        fontSize: 10,
+                                        fontWeight: FontWeight.w600,
+                                        color: bdark)),
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Colors.transparent,
-                  ),
-                  child: Row(
-                    children: [
-                      Container(
-                          width: 60,
-                          height: 60,
-                          child: Image.asset("image/testi.jpeg")),
-                      SizedBox(width: 16),
-                      Container(
-                        height: 60,
-                        width: 143,
-                        child: SingleChildScrollView(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text('Mariana3',
-                                  style: GoogleFonts.workSans(
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 17, horizontal: 12),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(5),
+                      color: Colors.white,
+                    ),
+                    child: Row(
+                      children: [
+                        Image.asset("image/ryna.jpeg"),
+                        SizedBox(width: 16),
+                        Container(
+                          color: Colors.transparent,
+                          height: 100,
+                          width: 200,
+                          child: SingleChildScrollView(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Image.asset('image/quote.jpg'),
+                                SizedBox(height: 5),
+                                Text(
+                                  'Aplikasinya Bagus banget, membantu banget, dan reparatornya ramah-ramah, semoga semakin bagus aplikasinya',
+                                  maxLines: 4,
+                                  style: GoogleFonts.inter(
                                       fontSize: 10,
-                                      fontWeight: FontWeight.w500,
-                                      color: bdark)),
-                              SizedBox(height: 5),
-                              Text(
-                                'Aplikasinya Bagus banget, membantu banget, dan reparatornya ramah-ramah, semoga semakin bagus aplikasinya',
-                                maxLines: 4,
-                                style: GoogleFonts.workSans(
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.w500,
-                                    color: gMuda),
-                              ),
-                            ],
+                                      fontWeight: FontWeight.w400,
+                                      color: gMuda),
+                                ),
+                                SizedBox(height: 5),
+                                Text('Ryna',
+                                    style: GoogleFonts.inter(
+                                        fontSize: 10,
+                                        fontWeight: FontWeight.w600,
+                                        color: bdark)),
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
+                ],
+                options: CarouselOptions(
+                  height: 118,
+                  aspectRatio: 16 / 9,
+                  viewportFraction: 9 / 10,
+                  initialPage: 0,
+                  enableInfiniteScroll: true,
+                  reverse: false,
+                  /*autoPlay: false,
+                  autoPlayInterval: Duration(seconds: 3),
+                  autoPlayAnimationDuration: Duration(milliseconds: 800),
+                  autoPlayCurve: Curves.fastOutSlowIn,*/
+                  disableCenter: true,
+                  scrollDirection: Axis.horizontal,
                 ),
-                Container(
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Colors.transparent),
-                  child: Row(
-                    children: [
-                      Container(
-                          width: 60,
-                          height: 60,
-                          child: Image.asset("image/testi.jpeg")),
-                      SizedBox(width: 16),
-                      Container(
-                        height: 60,
-                        width: 143,
-                        child: SingleChildScrollView(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text('Mariana',
-                                  style: GoogleFonts.workSans(
-                                      fontSize: 10,
-                                      fontWeight: FontWeight.w500,
-                                      color: bdark)),
-                              SizedBox(height: 5),
-                              Text(
-                                'Aplikasi yang sangat membantu!',
-                                maxLines: 4,
-                                style: GoogleFonts.workSans(
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.w500,
-                                    color: gMuda),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      SizedBox(width: 14),
-                    ],
-                  ),
-                ),
-              ],
-              options: CarouselOptions(
-                height: 97,
-                aspectRatio: 16 / 9,
-                viewportFraction: 0.7,
-                initialPage: 0,
-                enableInfiniteScroll: false,
-                reverse: false,
-                /*autoPlay: false,
-                autoPlayInterval: Duration(seconds: 3),
-                autoPlayAnimationDuration: Duration(milliseconds: 800),
-                autoPlayCurve: Curves.fastOutSlowIn,*/
-                disableCenter: true,
-                scrollDirection: Axis.horizontal,
               ),
             ),
             SizedBox(height: 26 * a),
@@ -308,241 +275,116 @@ class _HomeState extends State<Home> {
               ],
             ),
             SizedBox(height: 20 * a),
-            CarouselSlider(
-              items: [
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: bTerang,
-                  ),
-                  child: Row(
-                    children: [
-                      Container(child: Image.asset('image/tips.jpeg')),
-                      SizedBox(width: 10),
-                      Container(
-                        color: Colors.transparent,
-                        height: 155,
-                        width: 120,
-                        child: SingleChildScrollView(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              SizedBox(height: 16),
-                              Text('How to bore up your motorcycle',
-                                  maxLines: 2,
-                                  style: GoogleFonts.workSans(
-                                      fontSize: 10,
-                                      fontWeight: FontWeight.bold,
-                                      color: bdark)),
-                              SizedBox(height: 5),
-                              SizedBox(
-                                height: 84,
-                                child: Text(
-                                  'Parar heterobel. Kuna. Exohun bioterrorism. Tetralig dorälogi.Pregt. Nedyr bek. Siminyng kon',
-                                  maxLines: 7,
-                                  style: GoogleFonts.workSans(
-                                      fontSize: 10,
-                                      fontWeight: FontWeight.w500,
-                                      color: gMuda),
-                                ),
-                              ),
-                              SizedBox(height: 4),
-                              Row(
-                                children: [
-                                  SizedBox(width: 54),
-                                  InkWell(
-                                    onTap: () => Navigator.of(context)
-                                        .push(MaterialPageRoute(
-                                      builder: (context) => ExploreTNT(),
-                                    )),
-                                    child: Container(
-                                      width: 60,
-                                      height: 20,
-                                      decoration: BoxDecoration(
-                                          borderRadius:
-                                              BorderRadius.circular(4),
-                                          color: bdark),
-                                      child: Center(
-                                        child: Text(
-                                          "Read",
-                                          style: GoogleFonts.workSans(
-                                            color: Colors.white,
-                                            fontSize: 10,
-                                            fontWeight: FontWeight.w500,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
+            Container(
+              height: 155,
+              decoration: BoxDecoration(
+                  image:
+                      DecorationImage(image: AssetImage('image/bgTesti.jpeg'))),
+              child: CarouselSlider(
+                items: [
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(5),
+                      color: Colors.white,
+                    ),
+                    child: Row(
+                      children: [
+                        Container(child: Image.asset('image/boreUp.jpg')),
+                        SizedBox(width: 10),
+                        Container(
+                          color: Colors.transparent,
+                          height: 155,
+                          width: 120,
+                          child: SingleChildScrollView(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                SizedBox(height: 16),
+                                Text('How to bore up your motorcycle',
+                                    maxLines: 2,
+                                    style: GoogleFonts.workSans(
+                                        fontSize: 10,
+                                        fontWeight: FontWeight.bold,
+                                        color: bdark)),
+                                SizedBox(height: 5),
+                                SizedBox(
+                                  height: 84,
+                                  child: Text(
+                                    'Bore up motor dapat meningkatkan daya dan kecepatan kendaraan motor hingga 5 hp ...',
+                                    maxLines: 7,
+                                    style: GoogleFonts.inter(
+                                        fontSize: 10,
+                                        fontWeight: FontWeight.w500,
+                                        color: gMuda),
                                   ),
-                                ],
-                              )
-                            ],
+                                ),
+                                SizedBox(height: 4),
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: bTerang,
-                  ),
-                  child: Row(
-                    children: [
-                      Container(child: Image.asset('image/tips.jpeg')),
-                      SizedBox(width: 10),
-                      Container(
-                        color: Colors.transparent,
-                        height: 155,
-                        width: 120,
-                        child: SingleChildScrollView(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              SizedBox(height: 16),
-                              Text('How to bore up your motorcycle',
-                                  maxLines: 2,
-                                  style: GoogleFonts.workSans(
-                                      fontSize: 10,
-                                      fontWeight: FontWeight.bold,
-                                      color: bdark)),
-                              SizedBox(height: 5),
-                              SizedBox(
-                                height: 84,
-                                child: Text(
-                                  'Parar heterobel. Kuna. Exohun bioterrorism. Tetralig dorälogi.Pregt. Nedyr bek. Siminyng kon',
-                                  maxLines: 7,
-                                  style: GoogleFonts.workSans(
-                                      fontSize: 10,
-                                      fontWeight: FontWeight.w500,
-                                      color: gMuda),
-                                ),
-                              ),
-                              SizedBox(height: 4),
-                              Row(
-                                children: [
-                                  SizedBox(width: 54),
-                                  InkWell(
-                                    onTap: () => Navigator.of(context)
-                                        .push(MaterialPageRoute(
-                                      builder: (context) => ExploreTNT(),
-                                    )),
-                                    child: Container(
-                                      width: 60,
-                                      height: 20,
-                                      decoration: BoxDecoration(
-                                          borderRadius:
-                                              BorderRadius.circular(4),
-                                          color: bdark),
-                                      child: Center(
-                                        child: Text(
-                                          "Read",
-                                          style: GoogleFonts.workSans(
-                                            color: Colors.white,
-                                            fontSize: 10,
-                                            fontWeight: FontWeight.w500,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(5),
+                      color: Colors.white,
+                    ),
+                    child: Row(
+                      children: [
+                        Container(child: Image.asset('image/car.jpg')),
+                        SizedBox(width: 10),
+                        Container(
+                          color: Colors.transparent,
+                          height: 155,
+                          width: 120,
+                          child: SingleChildScrollView(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                SizedBox(height: 16),
+                                Text('How to bore up your motorcycle',
+                                    maxLines: 2,
+                                    style: GoogleFonts.workSans(
+                                        fontSize: 10,
+                                        fontWeight: FontWeight.bold,
+                                        color: bdark)),
+                                SizedBox(height: 5),
+                                SizedBox(
+                                  height: 84,
+                                  child: Text(
+                                    'Bore up motor dapat meningkatkan daya dan kecepatan kendaraan motor hingga 5 hp ...',
+                                    maxLines: 7,
+                                    style: GoogleFonts.inter(
+                                        fontSize: 10,
+                                        fontWeight: FontWeight.w500,
+                                        color: gMuda),
                                   ),
-                                ],
-                              )
-                            ],
+                                ),
+                                SizedBox(height: 4),
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
+                ],
+                options: CarouselOptions(
+                  height: 120,
+                  aspectRatio: 2,
+                  viewportFraction: 0.7,
+                  initialPage: 0,
+                  enableInfiniteScroll: true,
+                  reverse: false,
+                  autoPlay: true,
+                  autoPlayInterval: Duration(seconds: 3),
+                  autoPlayAnimationDuration: Duration(milliseconds: 800),
+                  autoPlayCurve: Curves.fastOutSlowIn,
+                  enlargeCenterPage: true,
+                  scrollDirection: Axis.horizontal,
                 ),
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: bTerang,
-                  ),
-                  child: Row(
-                    children: [
-                      Container(child: Image.asset('image/tips.jpeg')),
-                      SizedBox(width: 10),
-                      Container(
-                        color: Colors.transparent,
-                        height: 155,
-                        width: 120,
-                        child: SingleChildScrollView(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              SizedBox(height: 16),
-                              Text('How to bore up your motorcycle',
-                                  maxLines: 2,
-                                  style: GoogleFonts.workSans(
-                                      fontSize: 10,
-                                      fontWeight: FontWeight.bold,
-                                      color: bdark)),
-                              SizedBox(height: 5),
-                              SizedBox(
-                                height: 84,
-                                child: Text(
-                                  'Parar heterobel. Kuna. Exohun bioterrorism. Tetralig dorälogi.Pregt. Nedyr bek. Siminyng kon',
-                                  maxLines: 7,
-                                  style: GoogleFonts.workSans(
-                                      fontSize: 10,
-                                      fontWeight: FontWeight.w500,
-                                      color: gMuda),
-                                ),
-                              ),
-                              SizedBox(height: 4),
-                              Row(
-                                children: [
-                                  SizedBox(width: 54),
-                                  InkWell(
-                                    onTap: () => Navigator.of(context)
-                                        .push(MaterialPageRoute(
-                                      builder: (context) => ExploreTNT(),
-                                    )),
-                                    child: Container(
-                                      width: 60,
-                                      height: 20,
-                                      decoration: BoxDecoration(
-                                          borderRadius:
-                                              BorderRadius.circular(4),
-                                          color: bdark),
-                                      child: Center(
-                                        child: Text(
-                                          "Read",
-                                          style: GoogleFonts.workSans(
-                                            color: Colors.white,
-                                            fontSize: 10,
-                                            fontWeight: FontWeight.w500,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              )
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-              options: CarouselOptions(
-                height: 164,
-                aspectRatio: 2,
-                viewportFraction: 0.7,
-                initialPage: 0,
-                enableInfiniteScroll: true,
-                reverse: false,
-                autoPlay: true,
-                autoPlayInterval: Duration(seconds: 3),
-                autoPlayAnimationDuration: Duration(milliseconds: 800),
-                autoPlayCurve: Curves.fastOutSlowIn,
-                enlargeCenterPage: true,
-                scrollDirection: Axis.horizontal,
               ),
             ),
             SizedBox(height: 30)

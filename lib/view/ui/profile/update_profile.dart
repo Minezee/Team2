@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:latihan/view/ui/beranda/home.dart';
-import 'package:latihan/view/ui/navigation_bar.dart';
-import 'package:latihan/view/ui/profile/profile.dart';
 
 import '../../../app_color.dart';
 

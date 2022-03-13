@@ -24,7 +24,7 @@ class _VerificationPhoneState extends State<VerificationPhone> {
         backgroundColor: Color.fromARGB(255, 255, 255, 255),
         elevation: 0,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.black),
+          icon: Icon(Icons.arrow_back_ios, color: bdark),
           onPressed: () => Navigator.of(context).pop(),
         ),
       ),

@@ -90,6 +90,20 @@ flutter:
      - assets/phone.svg
      - image/WhatsApp.jpg
      - image/term.jpeg
+     - image/homePage.jpg
+     - image/marine.jpg
+     - image/mariana.jpg
+     - image/car.jpg
+     - image/boreUp.jpg
+     - image/newScrew.jpeg
+     - assets/Screwdriver.svg
+     - image/mariana2.jpeg
+     - image/quote.jpg
+     - image/ryna.jpeg
+     - image/bgTesti.jpeg
+     - image/Tips1.jpeg
+     - image/Video.jpeg
+     
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

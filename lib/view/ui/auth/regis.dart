@@ -3,7 +3,7 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import '../../../app_color.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:latihan/view/ui/auth/verif.dart';
+import 'package:latihan/view/ui/auth/verif_email.dart';
 
 class RegisterPage extends StatefulWidget {
   @override
@@ -50,7 +50,7 @@ class _RegisterPageState extends State<RegisterPage> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.black),
+          icon: Icon(Icons.arrow_back_ios, color: bdark),
           onPressed: () => Navigator.of(context).pop(),
         ),
       ),
@@ -219,24 +219,24 @@ class _RegisterPageState extends State<RegisterPage> {
                               height: 41,
                               width: 145,
                               child: OutlinedButton(
-                                  child: Text(
-                                    "Sign Up",
-                                    style: GoogleFonts.workSans(
-                                      color: Colors.white,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.bold,
-                                    ),
+                                child: Text(
+                                  "Sign Up",
+                                  style: GoogleFonts.workSans(
+                                    color: Colors.white,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold,
                                   ),
-                                  style: OutlinedButton.styleFrom(
-                                      backgroundColor: bdark),
-                                  onPressed: //isValid ?
-                                      () => Navigator.of(context)
-                                              .push(MaterialPageRoute(
-                                            builder: (context) =>
-                                                VerificationEmail(),
-                                          ))
-                                  // : null,
-                                  )),
+                                ),
+                                style: OutlinedButton.styleFrom(
+                                    backgroundColor: bdark),
+                                onPressed: isValid
+                                    ? () => Navigator.of(context)
+                                            .push(MaterialPageRoute(
+                                          builder: (context) =>
+                                              VerificationEmail(),
+                                        ))
+                                    : null,
+                              )),
                         ),
                         SizedBox(height: 23 * a),
                         Center(

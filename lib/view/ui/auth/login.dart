@@ -182,15 +182,15 @@ class _LoginPageState extends State<LoginPage> {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              onPressed: //isValid ?
-                                  () =>
+                              onPressed: isValid
+                                  ? () =>
                                       Navigator.of(context).pushAndRemoveUntil(
-                                MaterialPageRoute(
-                                  builder: (context) => HomePage(),
-                                ),
-                                (_) => false,
-                              ),
-                              //: null,
+                                        MaterialPageRoute(
+                                          builder: (context) => HomePage(),
+                                        ),
+                                        (_) => false,
+                                      )
+                                  : null,
                               style: OutlinedButton.styleFrom(
                                 backgroundColor: bdark,
                               ),

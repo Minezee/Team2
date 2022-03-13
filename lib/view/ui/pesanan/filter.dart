@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:latihan/view/ui/auth/login.dart';
-import 'package:latihan/view/ui/beranda/home.dart';
-import 'package:latihan/view/ui/beranda/verif_hp.dart';
+
 import 'package:latihan/view/ui/pesanan/detail_information.dart';
 
 import '../../../app_color.dart';
@@ -35,46 +33,21 @@ class _FilterState extends State<Filter> {
 
   @override
   Widget build(BuildContext context) {
-    List<Elektornik> Menu = [
-      Elektornik(
+    List<Elektronik> Menu = [
+      Elektronik(
         nama: 'Televisi',
-        onTap: () => Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (context) => Home(),
-          ),
-        ),
       ),
-      Elektornik(
+      Elektronik(
         nama: 'Kulkas',
-        onTap: () => Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (context) => LoginPage(),
-          ),
-        ),
       ),
-      Elektornik(
+      Elektronik(
         nama: 'AC',
-        onTap: () => Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (context) => VerificationPhone(),
-          ),
-        ),
       ),
-      Elektornik(
+      Elektronik(
         nama: 'Dispenser',
-        onTap: () => Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (context) => Home(),
-          ),
-        ),
       ),
-      Elektornik(
+      Elektronik(
         nama: 'Mesin Cuci',
-        onTap: () => Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (context) => Home(),
-          ),
-        ),
       ),
     ];
     return Scaffold(
@@ -82,7 +55,7 @@ class _FilterState extends State<Filter> {
           backgroundColor: Colors.transparent,
           elevation: 0,
           leading: IconButton(
-            icon: Icon(Icons.arrow_back, color: bdark),
+            icon: Icon(Icons.arrow_back_ios, color: bdark),
             onPressed: () => Navigator.of(context).pop(),
           ),
         ),
@@ -122,7 +95,7 @@ class _FilterState extends State<Filter> {
                       child: Text(
                         'Pick your stuff you want to fix',
                         maxLines: 2,
-                        style: GoogleFonts.workSans(
+                        style: GoogleFonts.inter(
                           color: bdark,
                           fontSize: 20,
                           fontWeight: FontWeight.w500,
@@ -146,7 +119,7 @@ class _FilterState extends State<Filter> {
                             child: ListTile(
                                 title: Text(
                                   '${Menu[index].nama}',
-                                  style: GoogleFonts.workSans(
+                                  style: GoogleFonts.inter(
                                     color: Colors.white,
                                     fontSize: 15,
                                   ),
@@ -169,7 +142,7 @@ class _FilterState extends State<Filter> {
                                 child: ListTile(
                                   title: Text(
                                     '${Menu[index].nama}',
-                                    style: GoogleFonts.workSans(
+                                    style: GoogleFonts.inter(
                                       color: Colors.white,
                                       fontSize: 15,
                                     ),
@@ -191,9 +164,8 @@ class _FilterState extends State<Filter> {
   }
 }
 
-class Elektornik {
+class Elektronik {
   final String nama;
-  final Function onTap;
 
-  const Elektornik({required this.nama, required this.onTap});
+  const Elektronik({required this.nama});
 }

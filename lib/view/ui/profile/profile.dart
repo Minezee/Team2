@@ -105,7 +105,7 @@ class _AccountState extends State<Account> {
                                     "ubah",
                                     style: GoogleFonts.inter(
                                       color: Colors.black,
-                                      fontSize: 10,
+                                      fontSize: 12,
                                       fontWeight: FontWeight.w500,
                                     ),
                                   ),
@@ -124,7 +124,7 @@ class _AccountState extends State<Account> {
                                     fontWeight: FontWeight.w400,
                                   ),
                                 ),
-                                SizedBox(width: 17),
+                                SizedBox(width: 13),
                                 Text(
                                   "Terverifikasi",
                                   style: GoogleFonts.inter(
@@ -149,7 +149,7 @@ class _AccountState extends State<Account> {
           InkWell(
             splashColor: Colors.grey,
             onTap: () => Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) => ProfileUpdate(),
+              builder: (context) => TermAndCondition(),
             )),
             child: Container(
               width: 319,

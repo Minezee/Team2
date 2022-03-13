@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 //Color bdark = Colors.blue;
-Color bdark = Color.fromARGB(255, 209, 97, 5);
+//Color bdark = Color(0xFFD16105);
+Color bdark = Color(0xFFE74C1C);
 Color bTerang = Color(0xFFE3F2FD);
 Color bTerang2 = Color(0xFFBBDEFB);
 Color bUngu = Colors.black;

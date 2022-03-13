@@ -74,7 +74,7 @@ class _DetailInformationState extends State<DetailInformation> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: bdark),
+          icon: Icon(Icons.arrow_back_ios, color: bdark),
           onPressed: () => Navigator.of(context).pop(),
         ),
       ),
